@@ -13,7 +13,7 @@
   margin-top: 100px;
   height: 60%; /* Tamaño del título */
   width: 100%;
-  background-image: url("./logo.png"); /* Ruta relativa a la imagen */
+  background-image: url("./public/images/logo.png"); /* Ruta relativa a la imagen */
   background-size: contain;
   background-position: center center; /* Centra la imagen de fondo */
   background-repeat: no-repeat;
