@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <main className="fira-code min-h-screen text-white main-background">
+    <main className="fira-code min-h-screen text-white main-background ">
       <div>
         <Portal />
       </div>
