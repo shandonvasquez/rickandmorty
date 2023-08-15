@@ -35,5 +35,5 @@ const LocationForm = ({ handleSubmit }) => {
     </form>
   );
 };
-
+// Delete this comment is just to sent a commit
 export default LocationForm;
