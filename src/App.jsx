@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { getRandomDimension } from "./utils/random";
 import axios from "axios";
@@ -9,11 +9,7 @@ import Portal from "./Portal";
 
 function App() {
   const [currentLocation, setCurrentLocation] = useState(null);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newLocation = e.target.newLocation.value;
-    fetchDimension(newLocation);
-  };
+
   const fetchDimension = (idLocation) => {
     const url = `https://rickandmortyapi.com/api/location/${idLocation}`;
     axios
@@ -33,7 +29,7 @@ function App() {
         <Portal />
       </div>
       <div className="text-black">
-        <LocationForm handleSubmit={handleSubmit} />
+        <LocationForm handleSubmit={fetchDimension} />
       </div>
       <LocationInfo currentLocation={currentLocation} />
       <div>

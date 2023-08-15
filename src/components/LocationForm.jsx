@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const LocationForm = ({ handleSubmit }) => {
+  const [locationId, setLocationId] = useState("");
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    if (locationId && locationId >= 1 && locationId <= 126) {
+      handleSubmit(locationId);
+    }
+  };
+
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={handleFormSubmit}
       className="flex flex-col items-center justify-center h-full"
     >
-      ={" "}
       <input
+        value={locationId}
+        onChange={(e) => setLocationId(e.target.value)}
         min={1}
         id="newLocation"
         max={126}

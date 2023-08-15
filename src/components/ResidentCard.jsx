@@ -16,11 +16,11 @@ const ResidentCard = ({ residentUrl }) => {
   }, []);
 
   return (
-    <article className="mx-auto max-w-md p-4 grid justify-items-center border-2 border-green-400 border-solid my-4">
+    <article className=" mx-auto max-w-md p-3 grid justify-items-center border-2 border-green-400 border-solid my-5">
       <header>
         <img src={residentInfo?.image} alt="Rick Sanchez" />
-        <div className="flex items-center gap-2 p-2">
-          <div className="statusResident flex gap-4">
+        <div className="flex items-center p-2">
+          <div className="statusResident flex gap-4 bg-stone-950 bg-opacity-70 rounded-md p-2 justify-center items-center">
             <div className="flex items-center">
               <div
                 className={`h-4 w-4 bg-green-400 rounded-full ${
@@ -29,9 +29,7 @@ const ResidentCard = ({ residentUrl }) => {
               ></div>
             </div>
 
-            <div className="text-white bg-stone-950 bg-opacity-50 p-2 rounded-md">
-              {residentInfo?.status}
-            </div>
+            <div className="text-white">{residentInfo?.status}</div>
           </div>
         </div>
       </header>
