@@ -1,0 +1,184 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+@media (min-width: 575px) {
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  :is(.header, .hero) .container {
+    max-width: unset;
+  }
+
+  .has-scrollbar {
+    gap: 30px;
+  }
+
+  .scrollbar-item {
+    min-width: calc(50% - 15px);
+  }
+
+  /**
+     * HEADER
+     */
+
+  .alert {
+    padding-block: 8px;
+  }
+
+  .header-top .container {
+    padding-inline: 30px;
+  }
+
+  /**
+     * HERO
+     */
+
+  .hero-card {
+    padding-inline: 70px;
+  }
+
+  .hero-text {
+    max-width: 30ch;
+  }
+
+  /**
+     * BANNER
+     */
+
+  .banner-card .card-text {
+    max-width: 30ch;
+  }
+
+  /**
+     * OFFER
+     */
+
+  .offer .countdown {
+    --fs-2: 4.8rem;
+  }
+
+  .offer .countdown .time:not(:last-child)::after {
+    margin-inline: 20px;
+  }
+}
+
+/**
+    * responsive for larger than 768px screen
+    */
+
+@media (min-width: 768px) {
+  /**
+      * CUSTOM PROPERTY
+      */
+
+  :root {
+    /**
+        * typography
+        */
+
+    --fs-1: 5.6rem;
+  }
+
+  /**
+      * REUSED STYLE
+      */
+
+  .container {
+    max-width: 730px;
+  }
+
+  .flex-item {
+    max-width: calc(50% - 15px);
+  }
+
+  /**
+      * COLLECTION
+      */
+
+  .collection-card {
+    min-height: 450px;
+  }
+
+  /**
+      * BANNER
+      */
+
+  .banner-list {
+    grid-template-columns: 1fr 0.7fr;
+  }
+
+  .banner-card {
+    padding: 50px;
+  }
+
+  /**
+      * OFFER
+      */
+
+  .offer .section-text {
+    max-width: 45ch;
+  }
+
+  /**
+      * FOOTER
+      */
+
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-list:last-child {
+    grid-column: 1 / 4;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom .wrapper {
+    margin-block-end: 0;
+  }
+}
+
+/**
+    * responsive for larger than 992px screen
+    */
+
+@media (min-width: 992px) {
+  /**
+      * CUSTOM PROPERTY
+      */
+}
+
+.main-background {
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* styles.css */
+.LocationSyte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* styles.css */
+.fira-code {
+  font-family: "Fira Code", monospace;
+}
+
+.statusResident {
+  margin-top: -100px;
+}

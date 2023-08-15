@@ -1,0 +1,33 @@
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* Utiliza la altura completa de la ventana */
+  background-size: contain; /* Cambia de cover a contain */
+  background-position: center center; /* Centra el fondo */
+  background-repeat: no-repeat;
+  margin-top: -100px;
+}
+.portal-title {
+  margin-top: 100px;
+  height: 60%; /* Tamaño del título */
+  width: 100%;
+  background-image: url("../src/rick%201/logo.png"); /* Ruta relativa a la imagen */
+  background-size: contain;
+  background-position: center center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-image {
+  background-position: center;
+  background-image: url("https://static1.squarespace.com/static/570413982eeb8114b6631016/59cffa294c0dbf7579528461/59cffc5937c5819421e5d541/1506803258457/Portal.gif");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
