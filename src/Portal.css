@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px; /* Utiliza la altura completa de la ventana */
-  background-size: contain; /* Cambia de cover a contain */
-  background-position: center center; /* Centra el fondo */
+  height: 300px;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
   margin-top: -100px;
 }
@@ -13,9 +13,9 @@
   margin-top: 100px;
   height: 60%; /* Tamaño del título */
   width: 100%;
-  background-image: url("./images/logo.png"); /* Ruta relativa a la imagen */
+  background-image: url("./public/logo.png");
   background-size: contain;
-  background-position: center center; /* Centra la imagen de fondo */
+  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;

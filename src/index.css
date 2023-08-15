@@ -2,21 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos generales */
-/* ... tus estilos existentes ... */
-
-/* Media query para pantallas pequeñas (hasta 640px) */
 @media (max-width: 640px) {
   .flex-wrap {
-    justify-content: center; /* Centrar verticalmente las tarjetas en pantallas pequeñas */
+    justify-content: center;
   }
 
   .w-full {
-    width: 100%; /* Las tarjetas ocuparán el ancho completo en pantallas pequeñas */
+    width: 100%;
   }
 
   .sm\:w-1\/2,
   .md\:w-1\/4 {
-    width: 100%; /* Cambiar el ancho de las tarjetas en pantallas pequeñas */
+    width: 100%;
   }
 }
