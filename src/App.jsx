@@ -28,9 +28,9 @@ function App() {
   }, []);
 
   return (
-    <main className="fira-code bg-black min-h-screen text-white main-background">
+    <main className="fira-code min-h-screen text-white main-background">
       <div>
-        <Portal /> hello
+        <Portal />
       </div>
       <div className="text-black">
         <LocationForm handleSubmit={handleSubmit} />
