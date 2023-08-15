@@ -16,18 +16,22 @@ const LocationForm = ({ handleSubmit }) => {
       onSubmit={handleFormSubmit}
       className="flex flex-col items-center justify-center h-full"
     >
-      <input
-        value={locationId}
-        onChange={(e) => setLocationId(e.target.value)}
-        min={1}
-        id="newLocation"
-        max={126}
-        placeholder="Type a location id"
-        type="number"
-      />
-      <button className="bg-green-300 text-white px-4 py-2 rounded hover:bg-blue-600">
-        Search
-      </button>
+      {" "}
+      <div className="bg-black text-white  border-green-500 border ">
+        <input
+          value={locationId}
+          onChange={(e) => setLocationId(e.target.value)}
+          min={1}
+          id="newLocation"
+          max={126}
+          placeholder="Type a location id"
+          type="number"
+          className="text-white bg-black p-2"
+        />
+        <button className="bg-green-300 text-white px-6 py-2  hover:bg-blue-600">
+          Search
+        </button>
+      </div>
     </form>
   );
 };

@@ -1,16 +1,22 @@
 const Pagination = ({ pages, setCurrentPage, currentPage }) => {
   return (
-    <ul>
+    <div className="flex items-center justify-center ">
       {pages.map((page) => (
-        <li
-          className={`${currentPage == page && "text-red-500"}`}
-          onClick={() => setCurrentPage(page)}
-          key={page}
-        >
-          {page}
-        </li>
+        <div className="p-2	">
+          <div
+            className={`px-2 py-1 cursor-pointer  ${
+              currentPage === page
+                ? "bg-green-500"
+                : " text-white 	 hover:bg-teal-300"
+            }`}
+            onClick={() => setCurrentPage(page)}
+            key={page}
+          >
+            {page}
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
